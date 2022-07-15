@@ -1,0 +1,12 @@
+main .formation ul {
+  list-style: none;
+}
+main .formation ul li {
+  display: inline;
+}
+main .photo img {
+  height: 400px;
+  border-radius: 10px;
+  position: relative;
+  left: 15%;
+}/*# sourceMappingURL=stylesheet.css.map */

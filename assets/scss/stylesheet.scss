@@ -1,0 +1,23 @@
+main{
+
+    .formation{
+        ul{
+            list-style: none;
+            li{
+                display: inline;
+            }
+        }
+    }
+
+    .photo{
+
+        img{
+            height: 400px;
+            border-radius: 10px;
+            position: relative;
+            left: 15%;
+            
+        }
+    }
+    
+}
