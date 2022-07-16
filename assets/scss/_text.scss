@@ -1,0 +1,22 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Ibarra+Real+Nova&display=swap');
+
+.title{
+    font-family:  'Ibarra Real Nova', serif;
+    font-weight: 900;
+}
+.text{
+        font-family: 'Arvo', serif;
+        font-weight: 400;
+        font-size: larger;
+}   
+
+.focus{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    &:hover{
+        animation: rainbow 2s linear infinite alternate both;
+    }
+}
+
