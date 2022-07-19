@@ -39,6 +39,7 @@ body header h1:hover {
 body header h2 {
   font-family: "Montsrrat", sans-serif;
   color: white;
+  animation: loading 1s ease-in-out infinite alternate;
 }
 body header h2:hover {
   font-weight: 600;

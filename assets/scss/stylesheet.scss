@@ -27,6 +27,8 @@ body{
             h2{
                 font-family: 'Montsrrat',sans-serif;
                 color: white;
+                animation: loading 1s ease-in-out infinite alternate;
+
                 &:hover{
                     font-weight: 600;
                 }
@@ -160,6 +162,7 @@ body{
         border-color: #3bd80d;
     }
 }
+
 
 
 //   MediaQueries 
