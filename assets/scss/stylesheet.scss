@@ -46,7 +46,7 @@ body{
             .formation{
                 h3{
                     text-decoration: underline;
-
+                   
                 }
                 .formation_cards{
                     .card{
@@ -56,24 +56,56 @@ body{
             }
             .employment{
                 ul{
-                    list-style-image: url();
+                    list-style-image: url(/assets/img/svg/sign-check-svgrepo-com.svg);
                 }
 
             }
         }
 
+        .info{
+            .photo{
 
+                img{
+                    height: 400px;
+                    animation: profilePhoto 0.9s both;
+                    border: 3px solid black;
+                    animation: rainbowBorder 8s linear infinite alternate both;
+                }
+            } 
 
-        .photo{
+            .contact{
 
-            img{
-                height: 400px;
-                border-radius: 10px;
-                position: relative;
-                left: 15%;
+            }
+
+            .skills{
+                .skills-ul{
+                    list-style-image: url(/assets/img/ico/know-svgrepo-com.svg);
+                }
+            }
+
+            .abilities{
+                .abilities-ul{
+                    list-style-image: url(/assets/img/svg/target-objective-svgrepo-com.svg);
+                }
+            }
+
+            .languages{
                 
+                .languages-ul{
+                    list-style-image: url(/assets/img/svg/language-svgrepo-com\ \(1\).svg);
+                }
+            }
+
+            .hobbies{
+                .hobbies-ul{
+                    list-style-image: url(/assets/img/svg/rubik-rubik-svgrepo-com.svg);
+                }
             }
         }
+
+
+
+
     }
 
 
@@ -101,5 +133,47 @@ body{
         background: #3bd80d;
     }
 }
+
+@keyframes rainbowBorder{
+    0% {
+        border-color: #19dcea;
+      }
+      25% {
+        border-color: #b22cff;
+      }
+      50% {
+        border-color: #ea2222;
+      }
+      75% {
+        border-color: #f5be10;
+      }
+      100% {
+        border-color: #3bd80d;
+    }
+}
+
+@keyframes profilePhoto {
+    0% {
+              transform: scale3d(1, 1, 1);
+    }
+    30% {
+              transform: scale3d(0.75, 1.25, 1);
+    }
+    40% {
+              transform: scale3d(1.25, 0.75, 1);
+    }
+    50% {
+              transform: scale3d(0.85, 1.15, 1);
+    }
+    65% {
+              transform: scale3d(1.05, 0.95, 1);
+    }
+    75% {
+              transform: scale3d(0.95, 1.05, 1);
+    }
+    100% {
+              transform: scale3d(1, 1, 1);
+    }
+  }
 
     

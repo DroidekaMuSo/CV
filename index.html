@@ -18,15 +18,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- Stylesheet -->
     <link rel="icon" href="assets/img/ico/starwars-jedi-svgrepo-com.svg">
@@ -46,27 +39,28 @@
 
         <section class="we col-md-8">
 
-            <article class="aboutMe my-3 p-3 container-fluid">
+            <article class="aboutMe my-3 p-3 container-fluid animate__animated animate__backInUp">
                 <h3 class="title mb-3">About <span class="focus">Me !</span></h3>
                 <p class="text">I am a dedicated, hard-working and proactive person who has developed a mature and responsible approach to any task that i undertake or situation that comes my way. As a graduate with two years and five months of production line experience, I'm excellent working as a team to achieve goals on time.</p>
             </article>
 
             <article class="formation mb-3 p-3 container-fluid">
-                <h3 class="title mb-5 text-center">Formation</h3>
+                <h3 class="title my-5 text-center" data-aos="flip-up">Formation</h3>
 
                 <div class="formation_cards d-flex flex-wrap justify-content-center align-content-between">
 
-                  <div class="card m-3 col-6" style="width: 18rem;">
+                  <div class="card m-3 col-6" data-aos="fade-right" style="width: 18rem;">
                     <div class="card-body">
                       <h4 class="card-title title text-center">Full Stack Developer</h4>
-                      <img src="" alt="">
+                      <img src="assets/img/jpg/fullStck.jpg" alt="A man programming" class="img-fluid rounded-4 my-3">
                       <p class="card-text"><em>In progress</em>, CODERHOUSE</p>
                     </div>
                   </div>
   
-                  <div class="card m-3 col-6" style="width: 18rem;">
+                  <div class="card m-3 col-6" data-aos="fade-left" style="width: 18rem;">
                     <div class="card-body">
                       <h4 class="card-title title text-center">Automotive Systems Engineer</h4>
+                      <img src="assets/img/jpg/automotive.jpg" alt="a parking space" class="img-fluid rounded-4 my-3">
                       <p class="card-text">Speciality in <strong>Manufacturing</strong></p>
                       <p class="card-text">End date:<em> June 2021</em>,
                       <p class="card-text">Esime Azcapotzalco, CDMX.</p>
@@ -77,9 +71,10 @@
 
                 <div class="formation_cards d-flex flex-wrap justify-content-center align-content-between my-5">
 
-                  <div class="card m-3" style="width: 18rem;">
+                  <div class="card m-3" data-aos="fade-up" style="width: 18rem;">
                     <div class="card-body">
                       <h4 class="card-title title text-center">Aeronautical Technician</h4>
+                      <img src="assets/img/jpg/airplane.jpg" alt="An airplane" class="img-fluid rounded-4 my-3">
                       <p class="card-text">Speciality in <strong>Maintenance of Industrial Machinery</strong></p>
                       <p class="card-text">End date:<em> June 2016</em>,</p>
                       <p class="card-text">CECyT #2 "Miguel Bernard Perales", Miguel Hidalgo, CDMX.</p>
@@ -91,34 +86,34 @@
                 </div>
             </article>
             <article class="employment my-3 p-3 container-fluid">
-              <h2 class="title my-3">Employment History</h2>
+              <h2 class="title my-3 " data-aos="fade-right">Employment History</h2>
 
                 <!-- Weldmation -->
-                <div class="weldmation my-3 p-3 card">
+                <div class="weldmation my-3 p-3 card" data-aos="flip-left">
                   <div class="job">
                     <h4 class="title">Change Control Coordinator</h4>
-                    <p>Start Date: <em>September-2021</em>, End Date: <em>Currently</em></p>
+                    <p>Start Date: <em>September-2021</em>, <br> End Date: <em>Currently</em></p>
                     <p><em>Ford</em>, Cuatitlan Izcalli, Mexico state.</p>
                   </div>
                   <div class="description">
                     <h5 class="title">Activities</h5>
                     <ul class="activites">
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
+                      <li>Engienerring change management (PPAP, In Plant date, new forward models)</li>
+                      <li>R&R</li>
+                      <li>Finance Review</li>
+                      <li>Final assembly impact</li>
+                      <li>BOM management</li>
                     </ul>
                   </div>
 
                 </div>
 
                 <!-- Stellantis -->
-                <div class="stellantis my-3 p-3 card">
+                <div class="stellantis my-3 p-3 card" data-aos="flip-left">
                   <!-- JOB -->
                   <div class="job">
                     <h4 class="title">Program Manager Jr.</h4>
-                    <p>Start Date: <em>August-2020</em>, End Date: <em>June-2021</em>,</p>  
+                    <p>Start Date: <em>August-2020</em>, <br> End Date: <em>June-2021</em>,</p>  
                     <p><em>Stellantis</em>, Santa Fe, CDMX.</p>
                   </div>
                   <!-- Description -->
@@ -138,11 +133,12 @@
                 </div>
 
                 <!-- ESIME -->
-                <div class="esime my-3 p-3 card">
+                <div class="esime my-3 p-3 card" data-aos="flip-left">
+
                   <!-- Job -->
                   <div class="job">
                     <h4 class="title">Manufacturing Laboratory Assistant</h4>
-                    <p>Start date: <em>November-2019</em>, End Date: <em>June-2020</em>,</p>
+                    <p>Start date: <em>November-2019</em>, <br> End Date: <em>June-2020</em>,</p>
                     <p>Social Service, ESIME Azcapotzalco, CDMX. </p>
                   </div>
                   <!-- Activities -->
@@ -159,7 +155,6 @@
                       <li>Oxyfuel</li>
                     </ul>
                   </div>
-
                 </div>
 
             </article>
@@ -170,15 +165,15 @@
 
           <!-- Personal Photo -->
           <article class="photo my-3 p-3 container-fluid">
-            <img src="assets/img/jpg/pexels-pixabay-220453 (4).jpg" alt="" class="mx-auto">
+            <img src="assets/img/jpg/pexels-pixabay-220453 (4).jpg" alt="" class="mx-auto rounded-4">
           </article>
 
           <!-- Contact -->
-          <article class="contact my-3 p-3 container-fluid">
+          <article class="contact my-3 p-3 container-fluid" data-aos="zoom-out-left">
             <h3>Contact</h3>
             <div class="container-fluid">
-              <ul class="contact_ul">
-                <li><ion-icon name="location-sharp"></ion-icon> Gobernador Alfredo del Mazo, Ahuizotla, Naucalpan de Juarez,Estado de Mexico, C.P. 53378</li>
+              <ul class="contact_ul list-unstyled">
+                <li><ion-icon name="location-sharp"></ion-icon> Ahuizotla, Naucalpan de Juarez,Estado de Mexico, C.P. 53378</li>
                 <li><ion-icon name="logo-whatsapp"></ion-icon> +52 5586015653</li>
                 <li><ion-icon name="mail-outline"></ion-icon> diego.munoz_solis@hotmail.com</li>
                 <li><i class="fa-thin fa-cake-candles"></i> Birthday: June 16th, 1998</li>
@@ -189,9 +184,9 @@
 
           <div class="hr"></div>
 
-          <div class="skills container-fluid my-3 p-3">
+          <div class="skills container-fluid my-3 p-3" data-aos="zoom-out-left">
             <h3 class="title">Skills</h3>
-            <ul class="skills_ul">
+            <ul class="skills-ul">
               <li>Flexible</li>
               <li>Proactive</li>
               <li>Work under stress</li>
@@ -206,9 +201,9 @@
 
           <div class="hr"></div>
 
-          <div class="abilities container-fluid my-3 p-3">
+          <div class="abilities container-fluid my-3 p-3" data-aos="zoom-out-left">
             <h3 class="title">Abilities</h3>
-            <ul class="abilities_ul">
+            <ul class="abilities-ul">
               <li>Google and Office suites</li>
               <li>AutoCAD, SolidWorks</li>
               <li>Lean Manufacturing, DMAIC, PDCA, 5s, 8D</li>
@@ -219,11 +214,11 @@
 
           <div class="hr"></div>
 
-          <div class="languages container-fluid my-3 p-3">
+          <div class="languages container-fluid my-3 p-3 " data-aos="zoom-out-left">
             <h3 class="title">Languages</h3>
-            <ul>
-              <li><i class="fa-solid fa-globe"></i> Spanish: Native language</li>
-              <li><i class="fa-solid fa-globe"></i> English: B2</li>
+            <ul class="languages-ul">
+              <li>Spanish: Native language</li>
+              <li>English: B2</li>
             </ul>
           </div>
 
@@ -231,7 +226,7 @@
             <h2></h2>
           </div>
 
-          <div class="hobbies container-fluid ">
+          <div class="hobbies container-fluid" data-aos="zoom-out-left">
             <h3>Hobbies</h3>
             <ul class="hobbies-ul">
               <li>Coding</li>
@@ -252,34 +247,30 @@
         <!-- Section: Social media -->
         <section class="mb-4">
           <!-- Facebook -->
-          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/diego.munoz.79677471/" role="button" target="_blank"
           ><i class="fab fa-facebook-f"></i
           ></a>
 
-          <!-- Twitter -->
-          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fab fa-twitter"></i
-          ></a>
-
-          <!-- Google -->
-          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-            ><i class="fab fa-google"></i
-          ></a>
-
           <!-- Instagram -->
-          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/diego.mz_s/" role="button" target="_blank"
             ><i class="fab fa-instagram"></i
           ></a>
 
           <!-- Linkedin -->
-          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/diegomuso/" role="button" target="_blank"
             ><i class="fab fa-linkedin-in"></i
           ></a>
 
           <!-- Github -->
-          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/DroidekaMuSo" role="button" target="_blank"
             ><i class="fab fa-github"></i
           ></a>
+
+          <!-- WhatsApp -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://wa.me/525586015653" role="button" target="_blank"></a>
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          
 
         </section>
         <!-- Section: Social media -->
@@ -313,5 +304,14 @@
 
     <!-- Font Awesome -->
     <script src="https://use.fontawesome.com/e604c11941.js"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/10ae43c8ea.js" crossorigin="anonymous"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
