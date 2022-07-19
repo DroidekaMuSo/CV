@@ -40,6 +40,15 @@ body{
 
 
         .we{
+            .photo{
+
+                img{
+                    height: 400px;
+                    animation: profilePhoto 0.9s both;
+                    border: 3px solid black;
+                    animation: rainbowBorder 8s linear infinite alternate both;
+                }
+            } 
             // .aboutMe{
    
             // }
@@ -63,7 +72,7 @@ body{
         }
 
         .info{
-            .photo{
+            .photo1{
 
                 img{
                     height: 400px;
@@ -73,9 +82,9 @@ body{
                 }
             } 
 
-            .contact{
+            // .contact{
 
-            }
+            // }
 
             .skills{
                 .skills-ul{
@@ -152,28 +161,28 @@ body{
     }
 }
 
-@keyframes profilePhoto {
-    0% {
-              transform: scale3d(1, 1, 1);
-    }
-    30% {
-              transform: scale3d(0.75, 1.25, 1);
-    }
-    40% {
-              transform: scale3d(1.25, 0.75, 1);
-    }
-    50% {
-              transform: scale3d(0.85, 1.15, 1);
-    }
-    65% {
-              transform: scale3d(1.05, 0.95, 1);
-    }
-    75% {
-              transform: scale3d(0.95, 1.05, 1);
-    }
-    100% {
-              transform: scale3d(1, 1, 1);
-    }
-  }
+
+//   MediaQueries 
+
+@media (max-width: 768px){
+
+
+    .photo1{
+
+        img{
+            display: none;
+        }
+    } 
+}
+
+@media (min-width: 768px){
+
+    .photo{
+
+        img{
+            display: none;
+        }
+    } 
+}
 
     

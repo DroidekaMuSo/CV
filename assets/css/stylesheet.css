@@ -43,6 +43,12 @@ body header h2 {
 body header h2:hover {
   font-weight: 600;
 }
+body main .we .photo img {
+  height: 400px;
+  animation: profilePhoto 0.9s both;
+  border: 3px solid black;
+  animation: rainbowBorder 8s linear infinite alternate both;
+}
 body main .we .formation h3 {
   text-decoration: underline;
 }
@@ -52,7 +58,7 @@ body main .we .formation .formation_cards .card {
 body main .we .employment ul {
   list-style-image: url(/assets/img/svg/sign-check-svgrepo-com.svg);
 }
-body main .info .photo img {
+body main .info .photo1 img {
   height: 400px;
   animation: profilePhoto 0.9s both;
   border: 3px solid black;
@@ -105,26 +111,13 @@ body main .info .hobbies .hobbies-ul {
     border-color: #3bd80d;
   }
 }
-@keyframes profilePhoto {
-  0% {
-    transform: scale3d(1, 1, 1);
+@media (max-width: 768px) {
+  .photo1 img {
+    display: none;
   }
-  30% {
-    transform: scale3d(0.75, 1.25, 1);
-  }
-  40% {
-    transform: scale3d(1.25, 0.75, 1);
-  }
-  50% {
-    transform: scale3d(0.85, 1.15, 1);
-  }
-  65% {
-    transform: scale3d(1.05, 0.95, 1);
-  }
-  75% {
-    transform: scale3d(0.95, 1.05, 1);
-  }
-  100% {
-    transform: scale3d(1, 1, 1);
+}
+@media (min-width: 768px) {
+  .photo img {
+    display: none;
   }
 }/*# sourceMappingURL=stylesheet.css.map */
